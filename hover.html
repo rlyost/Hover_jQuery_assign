@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Rick Yost
+28 Feb 2018
+Hovering Ninja Assignment -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hover Ninja</title>
+<!-- 	<link rel="stylesheet" type="text/css" href=""> -->
+	<style>
+		.image {
+			width: 250px;
+			height: 250px;
+			display: inline-block;
+		}
+		.restore {
+			width: 100px;
+			margin: 50px 450px;
+			text-align: center;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("img").hover(function() {
+				$(this).attr("src", "1ninja.png");
+			}, function() { 
+				$(this).attr("src", "images.png");
+			});
+		});
+	</script>
+</head>
+<body>
+	<div>
+		<img src="images.png" alt="ninja" class="image">
+	</div>
+	<div>
+		<img src="1ninja.png" alt="ninja" class="image">
+	</div>
+</body>
+</html>
